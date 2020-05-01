@@ -1,4 +1,4 @@
-package com.example.cocktailapp;
+package com.example.cocktailapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.cocktailapp.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -28,7 +29,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashScreenActivity.this, MainScreenActivity.class);
                 startActivity(intent);
             }
         }, SPLASH_TIME_OUT);
