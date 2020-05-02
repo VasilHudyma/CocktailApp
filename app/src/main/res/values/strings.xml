@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Cocktail App</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="name">Name:</string>
+    <string name="alcoholic">Alcoholic:</string>
+    <string name="glass">Glass:</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="search_hint">Enter text to start search</string>
+    <string name="title_activity_main_screen">MainScreenActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="enter_text_to_start_search">Enter text to start search</string>
+    <string name="no_cocktails_found">No cocktails found</string>
 </resources>

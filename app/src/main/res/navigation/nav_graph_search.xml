@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_search"
+    app:startDestination="@id/FirstSearchFragment">
+
+    <fragment
+        android:id="@+id/FirstSearchFragment"
+        android:name="com.example.cocktailapp.activity.FirstSearchFragment"
+        tools:layout="@layout/fragment_search_first">
+
+        <action
+            android:id="@+id/action_First_Search_Fragment_to_Second_Search_Fragment"
+            app:destination="@id/SecondSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondSearchFragment"
+        android:name="com.example.cocktailapp.activity.SecondSearchFragment"
+        tools:layout="@layout/fragment_search_second">
+
+        <action android:id="@+id/action_Second_Search_Fragment_to_Third_Search_Fragment"
+            app:destination="@id/ThirdSearchFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ThirdSearchFragment"
+        android:name="com.example.cocktailapp.activity.ThirdSearchFragment"
+        tools:layout="@layout/fragment_search_third">
+
+        <action
+            android:id="@+id/action_Third_Search_Fragment_to_Second_Search_Fragment"
+            app:destination="@id/SecondSearchFragment" />
+    </fragment>
+</navigation>
