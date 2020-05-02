@@ -20,7 +20,6 @@ public class DrinkScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink_screen);
 
-
         Intent intent = getIntent();
         DrinkEntity drinkEntity = (DrinkEntity) intent.getSerializableExtra("drinkEntity");
 
@@ -47,14 +46,14 @@ public class DrinkScreenActivity extends AppCompatActivity {
         String text = "";
 
         for (int i = 0; i < drinkEntity.getIngredients().size(); i++) {
-            text = text.concat((i + 1) + ". " + drinkEntity.getIngredients().get(i)+"\n");
+            text = text.concat((i + 1) + ". " + drinkEntity.getIngredients().get(i) + "\n");
         }
 
         ingredients.setText(text);
 
         String str = "";
-        for (int i =0; i<drinkEntity.getIngredientsMeasure().size();i++){
-            str = str.concat(drinkEntity.getIngredientsMeasure().get(i)+"\n");
+        for (int i = 0; i < drinkEntity.getIngredientsMeasure().size(); i++) {
+            str = str.concat(drinkEntity.getIngredientsMeasure().get(i) + "\n");
         }
 
         measures.setText(str);

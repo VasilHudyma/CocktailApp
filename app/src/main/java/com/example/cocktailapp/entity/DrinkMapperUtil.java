@@ -10,7 +10,7 @@ public class DrinkMapperUtil {
 
     public static List<DrinkEntity> mapDrinkJsonToDrinkEntity(JsonObject object) {
 
-        if (object.get("drinks").isJsonNull()){
+        if (object.get("drinks").isJsonNull()) {
             return null;
         }
         JsonArray array = object.getAsJsonArray("drinks");
@@ -42,7 +42,7 @@ public class DrinkMapperUtil {
             List<String> listMeasure = entityList.get(i).getIngredientsMeasure();
 
             for (int j = 1; j < ingredients.size() + 1; j++) {
-                if (array.get(i).getAsJsonObject().get("strMeasure" + j).isJsonNull()){
+                if (array.get(i).getAsJsonObject().get("strMeasure" + j).isJsonNull()) {
                     break;
                 }
                 listMeasure.add(array.get(i).getAsJsonObject().get("strMeasure" + j).getAsString());

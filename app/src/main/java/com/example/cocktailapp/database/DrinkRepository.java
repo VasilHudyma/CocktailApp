@@ -20,7 +20,7 @@ public class DrinkRepository {
         drinkList = drinkDao.getAllDrinks();
     }
 
-    public void insert(DrinkEntity entity){
+    public void insert(DrinkEntity entity) {
         new InsertAsyncTask(drinkDao).execute(entity);
     }
 
@@ -28,7 +28,7 @@ public class DrinkRepository {
         return drinkList;
     }
 
-    private class InsertAsyncTask extends AsyncTask<DrinkEntity,Void,Void> {
+    private class InsertAsyncTask extends AsyncTask<DrinkEntity, Void, Void> {
 
         DrinkDao dao;
 

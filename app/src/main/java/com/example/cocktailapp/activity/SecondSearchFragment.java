@@ -42,11 +42,11 @@ public class SecondSearchFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        recyclerView =view.findViewById(R.id.search_recyclerView);
+        recyclerView = view.findViewById(R.id.search_recyclerView);
         layoutManager = new GridLayoutManager(view.getContext(), 2);
         recyclerView.setLayoutManager(layoutManager);
 
-        SearchActivity2 searchActivity =(SearchActivity2) getActivity();
+        SearchActivity searchActivity = (SearchActivity) getActivity();
 
         drinkEntities = searchActivity.getDrinkEntities();
 
@@ -65,15 +65,10 @@ public class SecondSearchFragment extends Fragment {
     }
 
 
-    public void showData(){
+    public void showData() {
         mAdapter.setNewData(drinkEntities);
     }
 
-    public void callThirdFragment(){
-
-        //NavHostFragment.findNavController(SecondSearchFragment.this).navigate(R.id.action_Second_Search_Fragment_to_First_Search_Fragment);
-
-    }
 
     @Override
     public void onResume() {

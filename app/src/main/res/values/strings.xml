@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cocktail app</string>
+    <string name="app_name">Cocktail App</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="name">Name:</string>
@@ -10,14 +10,6 @@
     <string name="search_hint">Enter text to start search</string>
     <string name="title_activity_main_screen">MainScreenActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_search2">SearchActivity2</string>
     <string name="enter_text_to_start_search">Enter text to start search</string>
     <string name="no_cocktails_found">No cocktails found</string>
 </resources>

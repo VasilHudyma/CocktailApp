@@ -20,7 +20,7 @@ public class MainScreenActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainScreenActivity.this, SearchActivity2.class);
+                Intent intent = new Intent(MainScreenActivity.this, SearchActivity.class);
                 startActivity(intent);
             }
         });

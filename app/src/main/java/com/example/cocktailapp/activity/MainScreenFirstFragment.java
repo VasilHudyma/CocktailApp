@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class FirstFragment extends Fragment {
+public class MainScreenFirstFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private DrinkRecyclerAdapter mAdapter;
@@ -37,7 +37,7 @@ public class FirstFragment extends Fragment {
     ) {
         // Inflate the layout for this fragment
         drinkEntities = new ArrayList<>();
-        return inflater.inflate(R.layout.fragment_first, container, false);
+        return inflater.inflate(R.layout.main_screen_first_fragment, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -71,7 +71,7 @@ public class FirstFragment extends Fragment {
                 mAdapter.setNewData(entities);
 
                 if (drinkEntities.size() == 0) {
-                    NavHostFragment.findNavController(FirstFragment.this).navigate(R.id.action_FirstFragment_to_SecondFragment);
+                    NavHostFragment.findNavController(MainScreenFirstFragment.this).navigate(R.id.action_FirstFragment_to_SecondFragment);
                 }
             }
         });

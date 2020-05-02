@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DrinkService {
 
-    public List<DrinkEntity> getDrinksByName(String name){
+    public List<DrinkEntity> getDrinksByName(String name) {
         return null;
     }
 

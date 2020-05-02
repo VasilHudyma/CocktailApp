@@ -17,7 +17,7 @@ import com.example.cocktailapp.entity.DrinkEntity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecondFragment extends Fragment {
+public class MainScreenSecondFragment extends Fragment {
     private List<DrinkEntity> drinkEntities;
 
     @Override
@@ -28,7 +28,7 @@ public class SecondFragment extends Fragment {
         // Inflate the layout for this fragment
 
         drinkEntities = new ArrayList<>();
-        return inflater.inflate(R.layout.fragment_second, container, false);
+        return inflater.inflate(R.layout.main_screen_second_fragment, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class SecondFragment extends Fragment {
             public void onChanged(List<DrinkEntity> entities) {
                 drinkEntities.addAll(entities);
                 if (drinkEntities.size() > 0) {
-                    NavHostFragment.findNavController(SecondFragment.this).navigate(R.id.action_SecondFragment_to_FirstFragment);
+                    NavHostFragment.findNavController(MainScreenSecondFragment.this).navigate(R.id.action_SecondFragment_to_FirstFragment);
                 }
             }
         });
